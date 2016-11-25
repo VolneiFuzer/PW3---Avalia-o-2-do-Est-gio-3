@@ -7,32 +7,33 @@
 </head>
 <body>
     <h1>Cadastro de aluno</h1>
+    <ul id="listaTrabalhos"></ul>
     <fieldset>
         <legend>Local de trabalho</legend>
         <form id = "forTrabalho" method="POST">
-                Empresa: <input type="text" id = "inputEmpresa" name="inputEmpresa" placeholder="Digite o nome da empresa...">
-            <br><br>
+                Empresa: <input type="text" id = "inputEmpresa" name="inputEmpresa" placeholder="Digite o nome da empresa..." >
+                    <div id="erroInputEmpresa"></div><br>
                 Logradouro: <input type="text" id="inputLogradouro" name="inputLogradouro" placeholder="Digite o Logradouro...">
-                Número: <input type="number" id="inputNumero" name="inputNumero" placeholder="Digite o Número..."> 
-            <br><br>
-                Complemento: <input type="text" id="inputComplemento" name="inputComplemento" placeholder="Digite o complemento...">
+                    <div id="erroInputLogradouro"></div><br>
+                Número: <input type="text" id="inputNumero" name="inputNumero" placeholder="Digite o Número..."> 
             <br><br>    
+                Complemento: <input type="text" id="inputComplemento" name="inputComplemento" placeholder="Digite o complemento...">
+            <br><br>
                 Bairro: <input type="text" id="inputBairro" name="inputBairro" placeholder="Digite o Bairro...">
-                CEP: <input type="number" id="inputCEP" name="inputCEP" placeholder="Digite o CEP...">
-            <br><br>
+                    <div id="erroInputBairro"></div><br>
+                CEP: <input type="text" id="inputCEP" name="inputCEP" placeholder="Digite o CEP...">
+                    <div id="erroInputCEP"></div><br>
                 Cidade: <input type="text" id="inputCidade" name="inputCidade" placeholder="Digite a Cidade...">
-            <br><br>
+                    <div id="erroInputCidade"></div><br>
                 Telefone fixo: <input type="tel" id="inputTelFixo" name="inputTelFixo" placeholder="Digite o Telefone fixo...">
-                Ramal: <input type="number" id="inputRamal" name="inputRamal" placeholder="Digite o ramal...">
+                    <div id="erroInputTelFixo"></div><br>
+                Ramal: <input type="text" id="inputRamal" name="inputRamal" placeholder="Digite o ramal...">
+                    <div id="erroInputRamal"></div><br>                
                 Setor: <input type="text" id="inputSetor" name="inputSetor" placeholder="Digite o Setor...">
             <br><br>
             <!-- <input type="submit" value="Anterior"> -->
             <input type="submit" value="Finalizar" onclick="cadastraTrabalho(event)">
         </form>
     </fieldset>
-<!-- retirar -->
-        <ul id="listaTrabalhos">  
-        </ul>
-<!-- retirar -->
 </body>
 </html>
