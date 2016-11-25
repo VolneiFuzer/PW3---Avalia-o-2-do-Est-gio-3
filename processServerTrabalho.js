@@ -9,7 +9,6 @@ app.get("/index.html", function(req, res){
     res.sendFile( __dirname + "/static/" + "Trabalho.html" );
 });
 
-//ajustar para receber os dados do formulário "Trabalho.html"
 app.post("/cadastrarTrabalho", urlEncodedParser, function(req, res){
     response = {
         inputEmpresa: req.body.inputEmpresa,
