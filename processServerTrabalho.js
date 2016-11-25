@@ -28,6 +28,9 @@ app.post("/cadastrarTrabalho", urlEncodedParser, function(req, res){
     res.end(JSON.stringify(response));
 });
 
+// inserir as validações aqui.
+// inputEmpresa: validaEmpresa(req.body.inputEmpresa),
+
 var server = app.listen(8081, function (){
     console.log("Server running at http://127.0.0.1:8081/");
 });
